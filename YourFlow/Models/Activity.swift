@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Activity {
+    
+    var name: String?
+    var type: String?
+}

@@ -5,11 +5,20 @@ class ManagerActivitiesViewController: UIViewController, UITableViewDataSource, 
     @IBOutlet var tableView: UITableView!
     
     let dataManager = FakeDataManager.shared
+    
+    var activities: [Activity] = []
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Activity"
+        
+        activities = dataManager.activities
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -20,13 +29,13 @@ class ManagerActivitiesViewController: UIViewController, UITableViewDataSource, 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of activities
-        return dataManager.activities.count
+        return activities.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ActivityCell.reuseIdentifier, for: indexPath) as! ActivityCell
 
-        let activity = dataManager.activities[indexPath.row]
+        let activity = activities[indexPath.row]
         cell.configure(with: activity)
 
         return cell
@@ -36,7 +45,7 @@ class ManagerActivitiesViewController: UIViewController, UITableViewDataSource, 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Handle activity selection if needed
-        let selectedActivity = dataManager.activities[indexPath.row]
+        let selectedActivity = activities[indexPath.row]
         print("Selected Activity: \(selectedActivity.name)")
     }
 

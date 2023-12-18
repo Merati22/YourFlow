@@ -1,8 +1,33 @@
-//
-//  emcel.swift
-//  YourFlow
-//
-//  Created by Merati22 on 9/22/1402 AP.
-//
+import UIKit
 
-import Foundation
+class EmployeeTableViewCell: UITableViewCell {
+    static let reuseIdentifier = "EmployeeCell"
+
+    // Add any UI elements you need for your cell
+    let nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .left // Align the name to the left
+        label.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width * 0.85).isActive = true // Set width to 85% of screen width
+        return label
+    }()
+
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+        // Customize the cell's appearance
+        contentView.addSubview(nameLabel)
+
+        nameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        nameLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // Helper method to configure the cell with data
+    func configure(with user: User) {
+        nameLabel.text = "\(user.firstName ?? "") \(user.lastName ?? "")"
+    }
+}

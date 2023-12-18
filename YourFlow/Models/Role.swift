@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum Role {
+    case manager
+    case employee
+    case warehouseKeeper
+}

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class Task {
+    var id: Int?
+    var duration: Int?
+    var activity: Activity?
+        
+}

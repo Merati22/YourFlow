@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Ware {
+    var name: String?
+    var stock: Int?
+    var count: Int?
+}

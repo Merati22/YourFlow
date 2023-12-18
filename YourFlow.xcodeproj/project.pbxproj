@@ -9,21 +9,73 @@
 /* Begin PBXBuildFile section */
 		044AC4402B0BB611007C4F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC43F2B0BB611007C4F79 /* AppDelegate.swift */; };
 		044AC4422B0BB611007C4F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4412B0BB611007C4F79 /* SceneDelegate.swift */; };
-		044AC4442B0BB611007C4F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4432B0BB611007C4F79 /* ViewController.swift */; };
+		044AC4442B0BB611007C4F79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4432B0BB611007C4F79 /* LoginViewController.swift */; };
 		044AC4472B0BB611007C4F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044AC4452B0BB611007C4F79 /* Main.storyboard */; };
 		044AC4492B0BB613007C4F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044AC4482B0BB613007C4F79 /* Assets.xcassets */; };
 		044AC44C2B0BB613007C4F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044AC44A2B0BB613007C4F79 /* LaunchScreen.storyboard */; };
+		04750BAF2B126D7B00A36E4E /* ManagerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04750BAE2B126D7B00A36E4E /* ManagerHomeViewController.swift */; };
+		04750BB32B126DA700A36E4E /* WarehouseKeeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04750BB22B126DA700A36E4E /* WarehouseKeeperViewController.swift */; };
+		04834EA32B2DF829005BA610 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EA22B2DF829005BA610 /* TaskCell.swift */; };
+		04834EA52B2DF9F0005BA610 /* WareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EA42B2DF9F0005BA610 /* WareCell.swift */; };
+		04834EA72B2DFD2B005BA610 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EA62B2DFD2B005BA610 /* ActivityCell.swift */; };
+		04834EAA2B2ED67A005BA610 /* NewActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EA92B2ED67A005BA610 /* NewActivityViewController.swift */; };
+		04834EAD2B2EE1B8005BA610 /* EmployeeTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EAC2B2EE1B8005BA610 /* EmployeeTasksViewController.swift */; };
+		04834EAF2B301EDA005BA610 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EAE2B301EDA005BA610 /* NewTaskViewController.swift */; };
+		04834EB12B30270F005BA610 /* NewWareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04834EB02B30270F005BA610 /* NewWareViewController.swift */; };
+		049E3E252B12FD7800F2ABD2 /* ManagerEmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E3E242B12FD7800F2ABD2 /* ManagerEmployeesViewController.swift */; };
+		049E3E272B12FD8B00F2ABD2 /* NewEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E3E262B12FD8B00F2ABD2 /* NewEmployeeViewController.swift */; };
+		049E3E292B12FD9D00F2ABD2 /* DetailEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E3E282B12FD9D00F2ABD2 /* DetailEmployeeViewController.swift */; };
+		049E3E2B2B12FDB700F2ABD2 /* ManagerActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E3E2A2B12FDB700F2ABD2 /* ManagerActivitiesViewController.swift */; };
+		04BD0B7E2B172600008432D8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD0B7D2B172600008432D8 /* TestViewController.swift */; };
+		04BD0B802B172B1A008432D8 /* ManagerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD0B7F2B172B1A008432D8 /* ManagerTabBarController.swift */; };
+		04BD0B832B172D45008432D8 /* EmployeeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD0B822B172D45008432D8 /* EmployeeTabBarViewController.swift */; };
+		04BD0B852B172D70008432D8 /* WareHouseKeeperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD0B842B172D70008432D8 /* WareHouseKeeperTabBarController.swift */; };
+		04BD0B872B1759DF008432D8 /* ManagerWaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD0B862B1759DF008432D8 /* ManagerWaresViewController.swift */; };
+		04C05F7E2B0E4CCC00D4BE5F /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C05F7D2B0E4CCC00D4BE5F /* AuthenticationManager.swift */; };
+		04C780EA2B2765070003FDD2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780E92B2765070003FDD2 /* Activity.swift */; };
+		04C780EC2B2765590003FDD2 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780EB2B2765580003FDD2 /* Task.swift */; };
+		04C780EE2B2766310003FDD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780ED2B2766310003FDD2 /* User.swift */; };
+		04C780F42B2767690003FDD2 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780F32B2767690003FDD2 /* Role.swift */; };
+		04C780F62B2767990003FDD2 /* Ware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780F52B2767990003FDD2 /* Ware.swift */; };
+		04C780F82B29CBAF0003FDD2 /* FakeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780F72B29CBAF0003FDD2 /* FakeDataManager.swift */; };
+		04C780FA2B29CF650003FDD2 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C780F92B29CF650003FDD2 /* EmployeeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044AC43C2B0BB611007C4F79 /* YourFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044AC43F2B0BB611007C4F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044AC4412B0BB611007C4F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		044AC4432B0BB611007C4F79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044AC4432B0BB611007C4F79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044AC4462B0BB611007C4F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044AC4482B0BB613007C4F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044AC44B2B0BB613007C4F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044AC44D2B0BB613007C4F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04750BAE2B126D7B00A36E4E /* ManagerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerHomeViewController.swift; sourceTree = "<group>"; };
+		04750BB22B126DA700A36E4E /* WarehouseKeeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseKeeperViewController.swift; sourceTree = "<group>"; };
+		04834EA22B2DF829005BA610 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		04834EA42B2DF9F0005BA610 /* WareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareCell.swift; sourceTree = "<group>"; };
+		04834EA62B2DFD2B005BA610 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		04834EA92B2ED67A005BA610 /* NewActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewActivityViewController.swift; sourceTree = "<group>"; };
+		04834EAC2B2EE1B8005BA610 /* EmployeeTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTasksViewController.swift; sourceTree = "<group>"; };
+		04834EAE2B301EDA005BA610 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		04834EB02B30270F005BA610 /* NewWareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWareViewController.swift; sourceTree = "<group>"; };
+		049E3E242B12FD7800F2ABD2 /* ManagerEmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerEmployeesViewController.swift; sourceTree = "<group>"; };
+		049E3E262B12FD8B00F2ABD2 /* NewEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmployeeViewController.swift; sourceTree = "<group>"; };
+		049E3E282B12FD9D00F2ABD2 /* DetailEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEmployeeViewController.swift; sourceTree = "<group>"; };
+		049E3E2A2B12FDB700F2ABD2 /* ManagerActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerActivitiesViewController.swift; sourceTree = "<group>"; };
+		04BD0B7D2B172600008432D8 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		04BD0B7F2B172B1A008432D8 /* ManagerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerTabBarController.swift; sourceTree = "<group>"; };
+		04BD0B822B172D45008432D8 /* EmployeeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTabBarViewController.swift; sourceTree = "<group>"; };
+		04BD0B842B172D70008432D8 /* WareHouseKeeperTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WareHouseKeeperTabBarController.swift; sourceTree = "<group>"; };
+		04BD0B862B1759DF008432D8 /* ManagerWaresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerWaresViewController.swift; sourceTree = "<group>"; };
+		04C05F7D2B0E4CCC00D4BE5F /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		04C780E92B2765070003FDD2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		04C780EB2B2765580003FDD2 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		04C780ED2B2766310003FDD2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04C780F32B2767690003FDD2 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		04C780F52B2767990003FDD2 /* Ware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ware.swift; sourceTree = "<group>"; };
+		04C780F72B29CBAF0003FDD2 /* FakeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataManager.swift; sourceTree = "<group>"; };
+		04C780F92B29CF650003FDD2 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +110,119 @@
 			children = (
 				044AC43F2B0BB611007C4F79 /* AppDelegate.swift */,
 				044AC4412B0BB611007C4F79 /* SceneDelegate.swift */,
-				044AC4432B0BB611007C4F79 /* ViewController.swift */,
 				044AC4452B0BB611007C4F79 /* Main.storyboard */,
+				04BD0B812B172B22008432D8 /* Tab Bar Controller */,
+				04BD0B7D2B172600008432D8 /* TestViewController.swift */,
+				04C780FB2B29CF6E0003FDD2 /* Cells */,
+				04DE38FB2B0DB85A00415864 /* Controllers */,
+				04C05F7C2B0E4CAC00D4BE5F /* Models */,
 				044AC4482B0BB613007C4F79 /* Assets.xcassets */,
 				044AC44A2B0BB613007C4F79 /* LaunchScreen.storyboard */,
 				044AC44D2B0BB613007C4F79 /* Info.plist */,
 			);
 			path = YourFlow;
+			sourceTree = "<group>";
+		};
+		04834EA82B2ED66E005BA610 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				049E3E2A2B12FDB700F2ABD2 /* ManagerActivitiesViewController.swift */,
+				04834EA92B2ED67A005BA610 /* NewActivityViewController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		04834EAB2B2EDA7E005BA610 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				04834EAC2B2EE1B8005BA610 /* EmployeeTasksViewController.swift */,
+				04834EAE2B301EDA005BA610 /* NewTaskViewController.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		049DAFD42B183D7600ED579B /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				049E3E242B12FD7800F2ABD2 /* ManagerEmployeesViewController.swift */,
+				049E3E262B12FD8B00F2ABD2 /* NewEmployeeViewController.swift */,
+				049E3E282B12FD9D00F2ABD2 /* DetailEmployeeViewController.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		049E3E232B12FD0000F2ABD2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04750BAE2B126D7B00A36E4E /* ManagerHomeViewController.swift */,
+				049DAFD42B183D7600ED579B /* Employees */,
+				04834EA82B2ED66E005BA610 /* Activities */,
+				04BD0B862B1759DF008432D8 /* ManagerWaresViewController.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04BD0B7B2B172113008432D8 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				04834EAB2B2EDA7E005BA610 /* Tasks */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		04BD0B7C2B17211A008432D8 /* Warehouse Keeper */ = {
+			isa = PBXGroup;
+			children = (
+				04750BB22B126DA700A36E4E /* WarehouseKeeperViewController.swift */,
+				04834EB02B30270F005BA610 /* NewWareViewController.swift */,
+			);
+			path = "Warehouse Keeper";
+			sourceTree = "<group>";
+		};
+		04BD0B812B172B22008432D8 /* Tab Bar Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BD0B7F2B172B1A008432D8 /* ManagerTabBarController.swift */,
+				04BD0B822B172D45008432D8 /* EmployeeTabBarViewController.swift */,
+				04BD0B842B172D70008432D8 /* WareHouseKeeperTabBarController.swift */,
+			);
+			path = "Tab Bar Controller";
+			sourceTree = "<group>";
+		};
+		04C05F7C2B0E4CAC00D4BE5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04C05F7D2B0E4CCC00D4BE5F /* AuthenticationManager.swift */,
+				04C780E92B2765070003FDD2 /* Activity.swift */,
+				04C780EB2B2765580003FDD2 /* Task.swift */,
+				04C780ED2B2766310003FDD2 /* User.swift */,
+				04C780F32B2767690003FDD2 /* Role.swift */,
+				04C780F52B2767990003FDD2 /* Ware.swift */,
+				04C780F72B29CBAF0003FDD2 /* FakeDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04C780FB2B29CF6E0003FDD2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04C780F92B29CF650003FDD2 /* EmployeeTableViewCell.swift */,
+				04834EA22B2DF829005BA610 /* TaskCell.swift */,
+				04834EA42B2DF9F0005BA610 /* WareCell.swift */,
+				04834EA62B2DFD2B005BA610 /* ActivityCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		04DE38FB2B0DB85A00415864 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				044AC4432B0BB611007C4F79 /* LoginViewController.swift */,
+				04BD0B7B2B172113008432D8 /* Employee */,
+				04BD0B7C2B17211A008432D8 /* Warehouse Keeper */,
+				049E3E232B12FD0000F2ABD2 /* Manager */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +296,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044AC4442B0BB611007C4F79 /* ViewController.swift in Sources */,
+				04834EA52B2DF9F0005BA610 /* WareCell.swift in Sources */,
+				04C780EA2B2765070003FDD2 /* Activity.swift in Sources */,
+				04BD0B832B172D45008432D8 /* EmployeeTabBarViewController.swift in Sources */,
+				04750BAF2B126D7B00A36E4E /* ManagerHomeViewController.swift in Sources */,
+				049E3E292B12FD9D00F2ABD2 /* DetailEmployeeViewController.swift in Sources */,
+				04834EB12B30270F005BA610 /* NewWareViewController.swift in Sources */,
+				04834EA32B2DF829005BA610 /* TaskCell.swift in Sources */,
+				04BD0B802B172B1A008432D8 /* ManagerTabBarController.swift in Sources */,
+				049E3E2B2B12FDB700F2ABD2 /* ManagerActivitiesViewController.swift in Sources */,
+				04750BB32B126DA700A36E4E /* WarehouseKeeperViewController.swift in Sources */,
+				04834EAF2B301EDA005BA610 /* NewTaskViewController.swift in Sources */,
+				049E3E252B12FD7800F2ABD2 /* ManagerEmployeesViewController.swift in Sources */,
+				044AC4442B0BB611007C4F79 /* LoginViewController.swift in Sources */,
+				04C05F7E2B0E4CCC00D4BE5F /* AuthenticationManager.swift in Sources */,
+				049E3E272B12FD8B00F2ABD2 /* NewEmployeeViewController.swift in Sources */,
+				04C780FA2B29CF650003FDD2 /* EmployeeTableViewCell.swift in Sources */,
 				044AC4402B0BB611007C4F79 /* AppDelegate.swift in Sources */,
+				04BD0B852B172D70008432D8 /* WareHouseKeeperTabBarController.swift in Sources */,
+				04834EAD2B2EE1B8005BA610 /* EmployeeTasksViewController.swift in Sources */,
+				04834EAA2B2ED67A005BA610 /* NewActivityViewController.swift in Sources */,
+				04BD0B7E2B172600008432D8 /* TestViewController.swift in Sources */,
+				04C780F62B2767990003FDD2 /* Ware.swift in Sources */,
+				04BD0B872B1759DF008432D8 /* ManagerWaresViewController.swift in Sources */,
+				04834EA72B2DFD2B005BA610 /* ActivityCell.swift in Sources */,
+				04C780EC2B2765590003FDD2 /* Task.swift in Sources */,
 				044AC4422B0BB611007C4F79 /* SceneDelegate.swift in Sources */,
+				04C780EE2B2766310003FDD2 /* User.swift in Sources */,
+				04C780F82B29CBAF0003FDD2 /* FakeDataManager.swift in Sources */,
+				04C780F42B2767690003FDD2 /* Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +484,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +513,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

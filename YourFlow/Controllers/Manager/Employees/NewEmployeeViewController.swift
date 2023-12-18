@@ -1,29 +1,49 @@
-//
-//  NewEmployeeViewController.swift
-//  YourFlow
-//
-//  Created by Merati22 on 9/5/1402 AP.
-//
-
 import UIKit
 
 class NewEmployeeViewController: UIViewController {
 
+    @IBOutlet var firstNameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var phoneNumberTextField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initView()
     }
+
+    func initView() {
+        title = "New Employee"
+    }
+
+    @IBAction func DoneButtonTapped(_ sender: Any) {
+        
+        guard
+            let firstName = firstNameTextField.text,
+            let lastName = lastNameTextField.text,
+            let email = emailTextField.text,
+            let phoneNumberText = phoneNumberTextField.text,
+            let phoneNumber = Int(phoneNumberText)
+        else {
+            // Handle invalid input
+            return
+        }
+
+        // Create a new User instance
+        let newUser = User()
+        newUser.firstName = firstName
+        newUser.lastName = lastName
+        newUser.email = email
+        newUser.phoneNumber = phoneNumber
+
+        // Append the new user to the userEmployees array
+        if let managerEmployeesVC = navigationController?.viewControllers.first(where: { $0 is ManagerEmployeesViewController }) as? ManagerEmployeesViewController {
+            managerEmployeesVC.userEmployees.append(newUser)
+        }
+
+        // Dismiss the current view controller
+        navigationController?.popViewController(animated: true)
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+   
 }

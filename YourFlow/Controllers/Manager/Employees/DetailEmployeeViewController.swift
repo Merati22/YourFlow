@@ -1,29 +1,56 @@
-//
-//  DetailEmployeeViewController.swift
-//  YourFlow
-//
-//  Created by Merati22 on 9/5/1402 AP.
-//
-
 import UIKit
 
-class DetailEmployeeViewController: UIViewController {
+class DetailEmployeeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet var taskTableView: UITableView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+
+    var selectedUser: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        initView()
+        setupTableView()
+
+        if let user = selectedUser {
+            nameLabel.text = (user.firstName ?? "") + " " + (user.lastName ?? "")
+            emailLabel.text = user.email
+            phoneNumberLabel.text = String(user.phoneNumber ?? 09123456789)
+        }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initView() {
+        title = "Employee Information"
     }
-    */
 
+    func setupTableView() {
+        taskTableView.dataSource = self
+        taskTableView.delegate = self
+        taskTableView.register(TaskCell.self, forCellReuseIdentifier: TaskCell.reuseIdentifier)
+    }
+
+    // MARK: - UITableViewDataSource
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return selectedUser?.tasks.count ?? 0
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TaskCell.reuseIdentifier, for: indexPath) as! TaskCell
+
+        if let task = selectedUser?.tasks[indexPath.row] {
+            cell.configure(with: task)
+        }
+
+        return cell
+    }
+
+    // MARK: - UITableViewDelegate
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Handle task selection if needed
+    }
 }
